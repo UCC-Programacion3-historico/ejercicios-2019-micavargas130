@@ -3,5 +3,8 @@
 
 
 int sumatoria(int *arr, unsigned int size);
+{
+    while (p==)
+}
 
 #endif //INC_01_RECURSIVIDAD_SUMATORIA_H

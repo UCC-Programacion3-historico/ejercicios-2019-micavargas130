@@ -15,11 +15,10 @@ template <class T>
 void fnInvierte (Lista<T> *lis){
 
     int b=lis->getTamanio();
-    for (int i=0; i<(b/2); i++)
+    for (int i=0; i<b; i++)
     {
-        lis->moverUlti(i);
-        b--;
-        lis->moverPri(lis->getDato(b));
+        lis->insertar(i,lis->getDato(b-1));
+        lis->remover(b);
     }
 }
 

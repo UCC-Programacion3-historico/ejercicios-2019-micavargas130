@@ -7,15 +7,15 @@
 template<class T>
 Lista<T> *unir(Lista<T> &lisA, Lista<T> &lisB) {
 
-    Lista<T> temp(lisA);
+    Lista<T> A(lisA);
 
     for (int i=0; i<lisB.getTamanio();i++)
     {
-        temp.insertarUltimo(lisB.getDato(i));
+        A.insertarUltimo(lisB.getDato(i));
 
     }
 
-    return new Lista<T>(temp);
+    return  A;
 }
 
 

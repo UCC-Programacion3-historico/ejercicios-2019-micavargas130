@@ -5,17 +5,17 @@ using namespace std;
 
 int main() {
     char arr[100];
-    Pila<char> p;
+    Pila<char> A;
 
     cout << "Introduzca una palabra" << endl;
     cin >> arr;
 
     for (int i = 0; arr[i] != '\0'; i++) {
-        p.push(arr[i]);
+        A.push(arr[i]);
     }
 
-    while (!p.esVacia()) {
-        cout << p.pop();
+    while (!A.esVacia()) {
+        cout << A.pop();
     }
 
     return 0;

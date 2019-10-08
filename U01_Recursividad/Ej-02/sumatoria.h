@@ -2,6 +2,7 @@
 #define SUMATORIA_H
 
 
-int sumatoria(int *arr, unsigned int size);
+int sumatoria(int *arr,  int size);
+
 
 #endif //INC_01_RECURSIVIDAD_SUMATORIA_H

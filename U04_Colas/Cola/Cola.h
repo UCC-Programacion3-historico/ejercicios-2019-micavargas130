@@ -83,14 +83,14 @@ void Cola<T>::encolar(T dato) {
 template<class T>
 T Cola<T>::desencolar() {
     T aux;
-    Nodo<T> *aBorrar;
+    Nodo<T> *aBorrar=frente;
 
     if (frente == nullptr)
         throw 404;
 
     aux = frente->getDato();
 
-    aBorrar = frente;
+
     frente = frente->getSiguiente();
 
     if (frente == nullptr) {
